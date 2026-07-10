@@ -49,14 +49,14 @@ function Home() {
 
           <div className="hero-buttons">
 
-            <a
+            {/* <a
               href="/Amol Kandhare ResumeF.pdf"
               download
               className="primary-btn"
             >
               <FaDownload />
               Download Resume
-            </a>
+            </a> */}
 
             <a
               href="#projects"
