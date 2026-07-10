@@ -30,17 +30,17 @@ function Contact() {
         </div>
 
 
-        <div className="contact-card">
+        {/* <div className="contact-card">
           <FaGithub className="contact-icon" />
-          <h3>GitHub</h3>
-          <a
+          <h3>GitHub</h3> */}
+          {/* <a
             href="https://github.com/Amolkandhare2002"
             target="_blank"
             rel="noopener noreferrer"
           >
             github.com/Amolkandhare2002
-          </a>
-        </div>
+          </a> */}
+        {/* </div> */}
 
         <div className="contact-card">
           <FaLinkedin className="contact-icon" />

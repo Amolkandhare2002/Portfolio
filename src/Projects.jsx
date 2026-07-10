@@ -141,7 +141,7 @@ alt={project.title}
 
                 <div className="project-buttons">
 
-                  <a
+                  {/* <a
                     href={project.github}
                     target="_blank"
                     rel="noreferrer"
@@ -149,7 +149,7 @@ alt={project.title}
                   >
                     <FaGithub />
                     GitHub
-                  </a>
+                  </a> */}
 
                   <a
                     href={project.live}

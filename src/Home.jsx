@@ -69,14 +69,14 @@ function Home() {
           </div>
 
           <div className="hero-social">
-
+{/* 
             <a
               href="https://github.com/Amolkandhare2002"
               target="_blank"
               rel="noreferrer"
             >
               <FaGithub />
-            </a>
+            </a> */}
 
             <a
               href="https://linkedin.com/in/amol-kandhare-7826112a5"
