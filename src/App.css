@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+/* ===========================
+   GLOBAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    background:#0f172a;
+    color:#ffffff;
+    overflow-x:hidden;
+}
+
+/* ===========================
+   BACKGROUND GLOW
+=========================== */
+
+body::before{
+    content:"";
+    position:fixed;
+    width:700px;
+    height:700px;
+    top:-250px;
+    right:-250px;
+    border-radius:50%;
+    background:radial-gradient(circle,#2563eb33,transparent 70%);
+    z-index:-2;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:600px;
+    height:600px;
+    left:-200px;
+    bottom:-200px;
+    border-radius:50%;
+    background:radial-gradient(circle,#7c3aed33,transparent 70%);
+    z-index:-2;
+}
+
+#root{
+    width:100%;
+}
+
+/* ===========================
+   MAIN
+=========================== */
+
+.main-container{
+    width:100%;
+}
+
+/* ===========================
+   SECTIONS
+=========================== */
+
+.section{
+
+    width:100%;
+
+    padding:110px 8%;
+
+    background:#0f172a;
+
+    position:relative;
+
+    scroll-margin-top:90px;
+
+}
+
+.section:nth-child(even){
+
+    background:#111827;
+
+}
+
+/* ===========================
+   TITLES
+=========================== */
+
+.section-title{
+
+    text-align:center;
+
+    font-size:48px;
+
+    color:#ffffff;
+
+    margin-bottom:15px;
+
+    font-weight:800;
+
+}
+
+.section-title::after{
+
+content:"";
+
+display:block;
+
+width:90px;
+
+height:4px;
+
+margin:18px auto;
+
+background:linear-gradient(90deg,#2563eb,#7c3aed);
+
+border-radius:50px;
+
+}
+
+.section-subtitle{
+
+max-width:700px;
+
+margin:auto;
+
+text-align:center;
+
+font-size:18px;
+
+color:#cbd5e1;
+
+margin-bottom:70px;
+
+line-height:1.8;
+
+}
+
+/* ===========================
+   HEADINGS
+=========================== */
+
+h1,h2,h3,h4,h5,h6{
+
+color:white;
+
+font-weight:700;
+
+}
+
+p{
+
+color:#cbd5e1;
+
+line-height:1.9;
+
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.card,
+
+.project-card,
+
+.skill-card,
+
+.education-card,
+
+.about-card,
+
+.contact-card,
+
+.certification-card{
+
+background:#1e293b;
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:22px;
+
+box-shadow:0 20px 45px rgba(0,0,0,.25);
+
+transition:.4s;
+
+}
+
+.card:hover,
+
+.project-card:hover,
+
+.skill-card:hover,
+
+.education-card:hover,
+
+.about-card:hover,
+
+.contact-card:hover,
+
+.certification-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 25px 60px rgba(37,99,235,.25);
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.btn{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:10px;
+
+padding:15px 30px;
+
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+
+color:white;
+
+font-weight:600;
+
+border:none;
+
+border-radius:12px;
+
+transition:.35s;
+
+cursor:pointer;
+
+text-decoration:none;
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+
+img{
+
+max-width:100%;
+
+display:block;
+
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#111827;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#2563eb;
+
+border-radius:30px;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.section{
+
+padding:90px 7%;
+
+}
+
+.section-title{
+
+font-size:40px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.section{
+
+padding:80px 6%;
+
+}
+
+.section-title{
+
+font-size:34px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.section{
+
+padding:70px 5%;
+
+}
+
+.section-title{
+
+font-size:30px;
+
+}
+
+}

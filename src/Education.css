@@ -1,0 +1,281 @@
+/* ==========================
+   EDUCATION SECTION
+========================== */
+
+.education{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0f172a;
+    padding:90px 0;
+}
+
+.education .container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ==========================
+   HEADING
+========================== */
+
+.edu-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-tag{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:30px;
+    background:rgba(59,130,246,.12);
+    border:1px solid rgba(59,130,246,.25);
+    color:#60a5fa;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.edu-heading h2{
+    font-size:42px;
+    color:#ffffff;
+    margin-bottom:15px;
+}
+
+.edu-heading p{
+    max-width:650px;
+    margin:auto;
+    color:#94a3b8;
+    font-size:17px;
+    line-height:1.8;
+}
+
+/* ==========================
+   TIMELINE
+========================== */
+
+.timeline{
+    max-width:900px;
+    margin:auto;
+    position:relative;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:25px;
+    top:0;
+    width:2px;
+    height:100%;
+    background:linear-gradient(#3b82f6,#7c3aed);
+}
+
+/* ==========================
+   ITEM
+========================== */
+
+.timeline-item{
+    display:flex;
+    gap:25px;
+    margin-bottom:35px;
+    position:relative;
+}
+
+.timeline-icon{
+
+    width:50px;
+
+    height:50px;
+
+    flex-shrink:0;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    font-size:20px;
+
+    box-shadow:0 10px 25px rgba(37,99,235,.25);
+
+    z-index:2;
+
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.timeline-content{
+
+    flex:1;
+
+    background:#1e293b;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:22px 25px;
+
+    transition:.35s;
+
+}
+
+.timeline-content:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#3b82f6;
+
+    box-shadow:0 20px 40px rgba(37,99,235,.20);
+
+}
+
+.timeline-content span{
+
+    color:#60a5fa;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.timeline-content h3{
+
+    color:#ffffff;
+
+    font-size:22px;
+
+    margin:10px 0;
+
+}
+
+.timeline-content h4{
+
+    color:#cbd5e1;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    margin-bottom:12px;
+
+    line-height:1.6;
+
+}
+
+.timeline-content p{
+
+    color:#94a3b8;
+
+    font-size:15px;
+
+}
+
+.timeline-content strong{
+
+    color:#ffffff;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.education{
+
+padding:80px 0;
+
+}
+
+.edu-heading h2{
+
+font-size:34px;
+
+
+}
+
+.timeline::before{
+
+left:20px;
+
+}
+
+.timeline-item{
+
+gap:18px;
+
+}
+
+.timeline-icon{
+
+width:42px;
+
+height:42px;
+
+font-size:17px;
+
+}
+
+.timeline-content{
+
+padding:18px;
+
+}
+
+.timeline-content h3{
+
+font-size:19px;
+
+}
+
+.timeline-content h4{
+
+font-size:15px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.edu-heading h2{
+
+font-size:28px;
+
+
+}
+
+.edu-heading p{
+
+font-size:15px;
+
+}
+
+.timeline-item{
+
+align-items:flex-start;
+
+}
+
+.timeline::before{
+
+left:18px;
+
+}
+
+}
